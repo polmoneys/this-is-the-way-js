@@ -1,0 +1,27 @@
+{
+  "name": "this-is-the-way-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pretty": "prettier --write \"**/*.+(js|json|css|md|mdx|html)\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polmoneys/this-is-the-way-js.git"
+  },
+  "author": "pol moneys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/polmoneys/this-is-the-way-js/issues"
+  },
+  "homepage": "https://github.com/polmoneys/this-is-the-way-js#readme",
+  "dependencies": {
+    "lodash.isempty": "^4.4.0",
+    "lodash.isnil": "^4.0.0",
+    "lodash.omit": "^4.5.0",
+    "lodash.pick": "^4.4.0",
+    "prettier": "^2.2.1"
+  }
+}
