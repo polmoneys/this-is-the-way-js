@@ -1,3 +1,4 @@
+import isBoolean from "lodash.isboolean";
 import isEmpty from "lodash.isempty";
 import isNil from "lodash.isnil";
 import omit from "lodash.omit";
@@ -64,7 +65,6 @@ export const xsToObjbyId = (xs) =>
  * @param {function} 
  * @returns {array} xs that matches condition
  * @returns {array} xs that don't
-
   * @example <caption>Find kittens</caption>
   * xsSplit([{name:'Ava', months: 4},{name:'Mia', months: 8},{name:'Ava', months: 34}])
   * // returns [ [{name:'Ava', months: 4},{name:'Mia', months: 8}], [{name:'Ava', months: 34}]]
@@ -131,3 +131,12 @@ export const cbOrNoop = (fn) => {
  *
  */
 export const cbIf = (condition, yup, nope) => (condition ? yup() : nope());
+
+/** boolOrBoolString
+ *
+ * @param {initial}
+ * @returns {boolean}
+ *
+ */
+
+export const boolOrBoolString = (initial) => initial === "true" ? true : isBoolean(initial) ? initial : false;

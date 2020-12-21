@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/polmoneys/this-is-the-way-js#readme",
   "dependencies": {
+    "lodash.isboolean": "^3.0.3",
     "lodash.isempty": "^4.4.0",
     "lodash.isnil": "^4.0.0",
     "lodash.omit": "^4.5.0",
